@@ -12,14 +12,24 @@ export class Projects extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="section-container projects">
         <h2>Projects</h2>
-        <hr/>
         {this.props.projects.map( (project,i) =>
-          <div key={i}>
-            <h3>{project.get('name')}<small>{project.get('date')}</small></h3>
-            <p>{project.get('url')}</p>
-            <p>{project.get('description')}</p>
+          <div key={i} className="section-container">
+            <h3>
+              <a href={project.get('url')} target="_blank">{project.get('name')}</a>
+              <small>{project.get('date')}</small>
+            </h3>
+            <p className='divider-after'>
+              {project.get('description')}
+              {i == 0
+                ?(<span>
+                  {' The project was featured on '}
+                    <a href='https://www.youtube.com/watch?v=pUChD3HGAK4' target='_blank'>Fox 5 News.</a>
+                  </span>
+                ): null
+              }
+            </p>
             <p>{project.get('myRole')}</p>
             <ul>
               {project.get('technologies').map( (tech,i) =>

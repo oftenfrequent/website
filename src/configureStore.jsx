@@ -15,18 +15,19 @@ const stateTransformer = (state) => {
 }
 let enhancer
 
-// let createLogger = require('redux-logger')
-// const loggerMiddleware = createLogger({
-//   stateTransformer
-// })
+let createLogger = require('redux-logger')
+const loggerMiddleware = createLogger({
+  stateTransformer
+})
 
 
 enhancer = compose(
   applyMiddleware(
     thunk,
     apiMiddleware,
+    // loggerMiddleware
     // getStateInjector,
-    logger()
+    // logger()
   )
 )
 

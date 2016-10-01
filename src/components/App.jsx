@@ -3,7 +3,8 @@ import { connect } from 'react-redux'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import classNames from 'classnames'
 import { hashHistory } from 'react-router'
-// import './app.scss'
+
+import '../style/app.scss'
 
 export class App extends React.Component {
 
@@ -19,10 +20,8 @@ export class App extends React.Component {
 
   render () {
     return (
-      <div>
-        <div>
-          {this.props.children}
-        </div>
+      <div className='main-container'>
+        {this.props.children}
       </div>
     )
   }

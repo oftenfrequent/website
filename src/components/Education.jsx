@@ -12,13 +12,15 @@ export class Education extends React.Component {
 
   render() {
     return (
-      <div>
-        <h3>Schools</h3>
-        <hr/>
+      <div className="section-container">
+        <h2>Schools</h2>
         {this.props.schools.map( (school,i) =>
-          <div key={i}>
-            <h3>{school.get('name')}<small>{school.get('date')}</small></h3>
-            <h4>{school.get('location')}</h4>
+          <div key={i} className="section-container">
+            <h3>
+              <a href={school.get('url')} target="_blank">{school.get('name')}</a>
+              <small>{school.get('date')}</small>
+            </h3>
+            <h5>{school.get('location')}</h5>
             <p>{school.get('brief')}</p>
           </div>
         )}
