@@ -25,7 +25,8 @@ export class Projects extends React.Component {
               {i == 0
                 ?(<span>
                   {' The project was featured on '}
-                    <a href='https://www.youtube.com/watch?v=pUChD3HGAK4' target='_blank'>Fox 5 News.</a>
+                  <a href='https://www.youtube.com/watch?v=pUChD3HGAK4' target='_blank'>Fox 5 News </a>
+                  {'and unfortunately is no longer live.'}
                   </span>
                 ): null
               }

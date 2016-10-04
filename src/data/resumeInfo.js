@@ -2,7 +2,7 @@ export default {
 	projects: [
 		{
 			name: 'Ximer',
-			url: 'http://ximer.io (no longer live)',
+			url: 'https://www.youtube.com/watch?v=eExYsVEG2NU',
 			description: 'Ximer is a web-based digital audio workstation designed to allow users to record short audio loops and combine them with the use of effects to construct an audio track. With a timeline and drag and drop functionality built on top of the Web Audio framework, Tone.js, the interface built over a series of days had comparable features to that of fully functioning digital audio workstations.',
 			myRole: 'I was chosen by my teammates to be Team Lead and Project Manager of for Ximer. With only three weeks to complete the project, focusing our efforts was essential. Much of my time in the early parts of this project involved prototyping the timeline functionality and the recording of audio while delegating work amongst the team. With a strict deadline, our end goal was in constant motion yet as a team we exceeded expectations - hitting nearly every major feature we mapped during the first week.',
 			technologies: ['Angular', 'Mongo', 'Node', 'AWS (S3)', 'Tonejs', 'Javascript', 'SCSS', 'Digital Ocean', 'NGINX'],

@@ -1,12 +1,9 @@
-const port = (process.env.PORT || 1337)
+const port = (process.env.PORT || 3000)
 const path = require('path')
 const express = require('express')
 
 const app = express()
 
-
-const publicPath = express.static(path.join(__dirname, '../dist'))
-// app.use('/dist', publicPath)
 app.use(express.static(path.resolve('dist')));
 
 app.get('/', function (req, res, next) {
@@ -14,4 +11,4 @@ app.get('/', function (req, res, next) {
 });
 
 app.listen(port)
-console.log('Listening at http://localhost:1337')
+console.log('Listening at http://localhost:3000')
