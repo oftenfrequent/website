@@ -1,6 +1,14 @@
 export default {
 	projects: [
 		{
+			name: 'Eurorack Module Synthesizer',
+			url: 'http://eurorack.kylejburke.com',
+			description: 'The Eurorack is a one-of-a-kind module synthesizer built for the web browser. While inspired by anolog devices by the likes of Doepfer and Buchla, the eurorack is unique in its ability to allow users to customize a modular set up and interface with it in an infinite number of ways. Built on top of the Web Audio Framework, Tone.js, the eurorack will soon feature educational walkthroughs providing users with the opportunity to learn hands-on about synthesis and digital sound engineering.',
+			myRole: 'This was a personal project initially completed over a two month period and has since been in a constant state of improvement. I have scoped, designed, and developed the project all on my own.',
+			technologies: ['Node', 'Tonejs', 'Javascript', 'SCSS', 'Digital Ocean', 'NGINX'],
+			date: 'Winter 2017'
+		},
+		{
 			name: 'Ximer',
 			url: 'https://www.youtube.com/watch?v=eExYsVEG2NU',
 			description: 'Ximer is a web-based digital audio workstation designed to allow users to record short audio loops and combine them with the use of effects to construct an audio track. With a timeline and drag and drop functionality built on top of the Web Audio framework, Tone.js, the interface built over a series of days had comparable features to that of fully functioning digital audio workstations.',
@@ -29,10 +37,10 @@ export default {
 		{
 			company: 'Resonate',
 			url: 'https://resonate.is/',
-			myRole: 'For the past couple weeks I have been dedicating spare time working as a volunteer for Reonsate\'s software needs. My work has largely been focused on building out the Audio Player which will be crucial for the success of their crowdfunding campaign. Resonate\'s team is spead across the the globe making communication and management necessary for the success of this product.',
+			myRole: 'For several months I dedicated spare time working as a volunteer for Reonsate\'s software needs. My work was largely been focused on building out the Audio Player which will be crucial for the success of their crowdfunding campaign. Resonate\'s team is spead across the the globe making communication and management necessary for the success of this product.',
 			// projects: ['Audio Player'],
 			technologies: ['Javascript', 'Gulp', 'Amplitudejs'],
-			date: 'Summer 2016 - Present'
+			date: 'Summer 2016 - Winter 2016'
 		},
 		{
 			company: 'Skylark',
@@ -64,7 +72,7 @@ export default {
 		{
 			company: '1800Accountant',
 			url: 'https://1800accountant.com',
-			myRole: 'I was the lead in-house developer working with a tech team of two responsible for building out their online bookkeeping software. With such a small team I was responsible for deisgn and development for not only their customer facing site but also the landing pages and campaigns partered with companies such as Legalzoom and Sam\'s Club. Under the guidance of CTO, I was also responsible for building integrations with Salesforce.',
+			myRole: 'I was the lead in-house developer working with a tech team of two, responsible for building out the online bookkeeping software. With such a small team I was responsible for deisgn and development for not only their customer facing site but also the landing pages and campaigns partered with companies such as Legalzoom and Sam\'s Club. Under the guidance of the CTO, I was also responsible for building integrations with Salesforce.',
 			technologies: ['PHP', 'Javascript', 'Cake PHP', 'Salesforce', 'MySQL'],
 			date: 'Winter 2013 - Spring 2015'
 		},

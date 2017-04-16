@@ -28,16 +28,16 @@ export class ResumePage extends React.Component {
         <div className="header-container">
           <h1>Kyle Burke</h1>
           <h5>
-            <a href="https://www.linkedin.com/in/kylejayburke">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/kylejayburke" target="_blank">LinkedIn</a>
             <span> | </span>
-            <a href="https://github.com/k23Burke">Github</a>
+            <a href="https://github.com/k23Burke" target="_blank">Github</a>
             <span> | </span>
-            <a href="mailto:k23burke@gmail.com?Subject=Guy%20Man%20Bro%20Dude">Email</a>
+            <a href="mailto:k23burke@gmail.com?Subject=Guy%20Man%20Bro%20Dude" target="_blank">Email</a>
             <span> | </span>
-            <a href="https://soundcloud.com/audios_music">Soundcloud</a>
+            <a href="https://soundcloud.com/audios_music" target="_blank">Soundcloud</a>
           </h5>
           <h5 className>
-            <span>New York, NY -> London, UK</span>
+            <span>New York, NY | London, UK</span>
           </h5>
         </div>
         <Projects projects={this.props.main.get('projects')} />

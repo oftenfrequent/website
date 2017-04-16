@@ -48,18 +48,20 @@ if (production) {
         __DEVTOOLS__:    !production,
         'process.env':   {
             BABEL_ENV: JSON.stringify(process.env.NODE_ENV),
+            NODE_ENV: JSON.stringify('production')
         },
     })
   ]);
 }
 
-
-module.exports = {
-  entry: [
+var entry = production ? [ './src/index.jsx' ] : [
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './src/index.jsx'
-  ],
+  ]
+
+module.exports = {
+  entry: entry,
   debug:   !production,
   devtool: 'source-map',
   module: {
@@ -91,8 +93,8 @@ module.exports = {
     path: __dirname + '/dist',
     publicPath: '/',
     filename: 'bundle.js',
-    filename:      production ? '[name]-[hash].js' : 'bundle.js',
-    chunkFilename: '[name]-[chunkhash].js'
+    // filename:      production ? '[name]-[hash].js' : 'bundle.js',
+    // chunkFilename: '[name]-[chunkhash].js'
   },
   devServer: {
     contentBase: './dist',

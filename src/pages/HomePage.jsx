@@ -13,7 +13,6 @@ export class HomePage extends React.Component {
   constructor (props) {
     super(props)
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this)
-    this.state = { linkToResume: false }
   }
 
   componentDidMount () {
@@ -23,6 +22,9 @@ export class HomePage extends React.Component {
   onKeyUp (e) {
     if (this.refs.pass.value.toLowerCase() === secrets.passcode) {
       this.props.grantAccess();
+    }
+    if (e.keyCode === 13 && this.props.main.get('allowed')) {
+      this.props.history.push('/resume');
     }
   }
 

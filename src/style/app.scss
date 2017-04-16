@@ -66,6 +66,7 @@ a:hover, a:visited, a:focus {
 body {
 	padding: 15px;
 	color: #333;
+	background-color: #F9F9F9;
 }
 
 .main-container{
@@ -116,7 +117,7 @@ body {
 		    content: '';
 		    display: block;
 		    height: 1px;
-		    margin: 10px auto 5px;
+		    margin: 15px auto 5px;
 		    width: 50px;
 			}
 		}
@@ -131,6 +132,7 @@ input:focus { outline: none; }
 	input {
 		border: 0px;
 		border-bottom: 1px solid #333;
+		background-color: #f9f9f9;
 	}
 }
 

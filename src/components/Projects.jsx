@@ -22,7 +22,7 @@ export class Projects extends React.Component {
             </h3>
             <p className='divider-after'>
               {project.get('description')}
-              {i == 0
+              {i == 1
                 ?(<span>
                   {' The project was featured on '}
                   <a href='https://www.youtube.com/watch?v=pUChD3HGAK4' target='_blank'>Fox 5 News </a>

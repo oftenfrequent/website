@@ -13,7 +13,7 @@ export class Education extends React.Component {
   render() {
     return (
       <div className="section-container">
-        <h2>Schools</h2>
+        <h2>Education</h2>
         {this.props.schools.map( (school,i) =>
           <div key={i} className="section-container">
             <h3>
