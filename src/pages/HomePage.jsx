@@ -4,9 +4,8 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { Link } from 'react-router'
 
 
-import Projects from '../components/Projects'
-import Education from '../components/Education'
-import Jobs from '../components/Jobs'
+import Header from '../components/Header'
+import Bio from '../components/Bio'
 import secrets from '../config/secrets'
 
 export class HomePage extends React.Component {
@@ -31,10 +30,9 @@ export class HomePage extends React.Component {
   render () {
     return (
       <div>
-        <div className="header-container">
-          <h1>Kyle Burke</h1>
-          <br/>
-          <br/>
+        <Header/>
+        <Bio/>
+        <div className='resume-access-section'>
           <h5>To access my resume please enter the password below</h5>
           <div className="center">
             <input ref='pass' onKeyUp={(e) => this.onKeyUp(e)} />

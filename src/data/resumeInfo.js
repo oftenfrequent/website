@@ -3,8 +3,8 @@ export default {
 		{
 			name: 'Eurorack Module Synthesizer',
 			url: 'http://eurorack.kylejburke.com',
-			description: 'The Eurorack is a one-of-a-kind module synthesizer built for the web browser. While inspired by anolog devices by the likes of Doepfer and Buchla, the eurorack is unique in its ability to allow users to customize a modular set up and interface with it in an infinite number of ways. Built on top of the Web Audio Framework, Tone.js, the eurorack will soon feature educational walkthroughs providing users with the opportunity to learn hands-on about synthesis and digital sound engineering.',
-			myRole: 'This was a personal project initially completed over a two month period and has since been in a constant state of improvement. I have scoped, designed, and developed the project all on my own.',
+			description: 'The Eurorack is a one-of-a-kind module synthesizer built for the web browser. Inspired by its anolog counterparts, the eurorack is unique in its ability to allow users to customize a modular set up and interface with it in an infinite number of ways. Built on top of the Web Audio Framework, Tone.js, the eurorack will soon feature educational walkthroughs providing users with the opportunity to learn hands-on about synthesis and digital sound engineering.',
+			myRole: 'This was a personal project initially completed over a two month period and has since been in a constant state of improvement. I have scoped, designed, and developed the project all on my own. For the best experience, please use a laptop or desktop running Google Chrome web browser.',
 			technologies: ['Node', 'Tonejs', 'Javascript', 'SCSS', 'Digital Ocean', 'NGINX'],
 			date: 'Winter 2017'
 		},

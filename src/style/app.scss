@@ -1,19 +1,19 @@
 h1 {
 	// font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
-	font-weight: 100;
+	font-weight: 200;
 	font-size: 60px;
 	line-height: 70px;
 	text-align: center;
-	letter-spacing: 10px;
-	&:after {
-    background: rgba(0, 0, 0, 0.8);
-    content: '';
-    display: block;
-    height: 1px;
-    margin: 10px auto 20px;
-    width: 150px;
-	}
+	letter-spacing: 5px;
+	// &:after {
+ //    background: rgba(0, 0, 0, 0.8);
+ //    content: '';
+ //    display: block;
+ //    height: 1px;
+ //    margin: 10px auto 20px;
+ //    width: 150px;
+	// }
 }
 
 h2 {
@@ -74,7 +74,8 @@ body {
 	margin: 15 auto;
 
 	.header-container {
-		margin-bottom: 80px;
+		margin-bottom: 20px;
+
 		h5 {
 			font-size: 18px;
 			text-align: center;
@@ -97,7 +98,7 @@ body {
 
 	h3 {
 		padding-bottom: 10px;
-		border-bottom: 1px solid #333;
+		border-bottom: 2px solid #333;
 		& small {
 			float: right;
 			line-height: 40px;
@@ -124,6 +125,58 @@ body {
 	}
 }
 
+.avatar-section {
+	margin-top: 20px;
+
+	hr {
+		top: 250px;
+    z-index: 0;
+    position: relative;
+    border-top: 2px solid #333;
+    border-radius: 5px;
+    width: 90%;
+
+    &:first-of-type {
+    	width: 50%;
+    }
+	}
+
+	.avatar-container {
+		height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+		position: relative;
+		border: 3px solid #333;
+
+    img {
+	    width: 500px;
+	    margin-top: -40px;
+	    margin-left: -90px;
+    }
+	}
+}
+
+.name-divider {
+  border-top: 2px solid #333;
+	width: 150px;
+	margin-top: 0px;
+
+}
+
+.bio-container {
+	width: 90%;
+	margin:0 auto;
+	text-align: center;
+}
+
+.resume-access-section {
+	text-align: center;
+  padding: 20px;
+  height: 200px;
+}
+
 input:focus { outline: none; }
 
 .center {
@@ -131,7 +184,7 @@ input:focus { outline: none; }
 
 	input {
 		border: 0px;
-		border-bottom: 1px solid #333;
+		border-bottom: 2px solid #333;
 		background-color: #f9f9f9;
 	}
 }
@@ -139,6 +192,9 @@ input:focus { outline: none; }
 @media (max-width: 600px) {
   h3 {
     font-size: 24px;
+  }
+  h1 {
+    font-size: 40px;
   }
 }
 

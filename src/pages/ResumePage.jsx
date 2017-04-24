@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { hashHistory } from 'react-router'
 
+import Header from '../components/Header'
 import Projects from '../components/Projects'
 import Education from '../components/Education'
 import Jobs from '../components/Jobs'
@@ -25,21 +26,7 @@ export class ResumePage extends React.Component {
   render () {
     return (
       <div>
-        <div className="header-container">
-          <h1>Kyle Burke</h1>
-          <h5>
-            <a href="https://www.linkedin.com/in/kylejayburke" target="_blank">LinkedIn</a>
-            <span> | </span>
-            <a href="https://github.com/k23Burke" target="_blank">Github</a>
-            <span> | </span>
-            <a href="mailto:k23burke@gmail.com?Subject=Guy%20Man%20Bro%20Dude" target="_blank">Email</a>
-            <span> | </span>
-            <a href="https://soundcloud.com/audios_music" target="_blank">Soundcloud</a>
-          </h5>
-          <h5 className>
-            <span>New York, NY | London, UK</span>
-          </h5>
-        </div>
+        <Header/>
         <Projects projects={this.props.main.get('projects')} />
         <Jobs jobs={this.props.main.get('workExperience')} />
         <Education schools={this.props.main.get('education')} />
