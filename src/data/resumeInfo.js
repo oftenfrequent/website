@@ -5,7 +5,7 @@ export default {
 			url: 'http://eurorack.kylejburke.com',
 			description: 'The Eurorack is a one-of-a-kind module synthesizer built for the web browser. Inspired by its anolog counterparts, the eurorack is unique in its ability to allow users to customize a modular set up and interface with it in an infinite number of ways. Built on top of the Web Audio Framework, Tone.js, the eurorack will soon feature educational walkthroughs providing users with the opportunity to learn hands-on about synthesis and digital sound engineering.',
 			myRole: 'This was a personal project initially completed over a two month period and has since been in a constant state of improvement. I have scoped, designed, and developed the project all on my own. For the best experience, please use a laptop or desktop running Google Chrome web browser.',
-			technologies: ['Node', 'Tonejs', 'Javascript', 'SCSS', 'Digital Ocean', 'NGINX'],
+			technologies: ['Javascript', 'React', 'Redux', 'Webpack', 'Node', 'Express', 'Tonejs',  'SCSS', 'Digital Ocean', 'NGINX'],
 			date: 'Winter 2017'
 		},
 		{
@@ -13,7 +13,7 @@ export default {
 			url: 'https://www.youtube.com/watch?v=eExYsVEG2NU',
 			description: 'Ximer is a web-based digital audio workstation designed to allow users to record short audio loops and combine them with the use of effects to construct an audio track. With a timeline and drag and drop functionality built on top of the Web Audio framework, Tone.js, the interface built over a series of days had comparable features to that of fully functioning digital audio workstations.',
 			myRole: 'I was chosen by my teammates to be Team Lead and Project Manager of for Ximer. With only three weeks to complete the project, focusing our efforts was essential. Much of my time in the early parts of this project involved prototyping the timeline functionality and the recording of audio while delegating work amongst the team. With a strict deadline, our end goal was in constant motion yet as a team we exceeded expectations - hitting nearly every major feature we mapped during the first week.',
-			technologies: ['Angular', 'Mongo', 'Node', 'AWS (S3)', 'Tonejs', 'Javascript', 'SCSS', 'Digital Ocean', 'NGINX'],
+			technologies: ['Javascript', 'Angular', 'Mongo', 'Node', 'Express', 'AWS (S3)', 'Tonejs', 'SCSS', 'Digital Ocean', 'NGINX'],
 			date: 'Spring 2015'
 		},
 		{
@@ -21,7 +21,7 @@ export default {
 			url: 'http://websynth.herokuapp.com/',
 			description: "Websynth is a web-based polyphonic synthesizer built on the back of Tonejs. This was a hackathon project originally completed during my cohort's 3 day hackathon at Fullstack Academy. It is equipped with common functionality to a desktop synthesizer as well as an effects rack. To use this application you need a usb midi keyboard device plugged into your computer.",
 			myRole: 'I was the sole developer on this project - winning the award for the Most Technically Challenging Hackathon Project at Fullstack Academy.',
-			technologies: ['Angular', 'Web Audio API', 'Node', 'Tonejs', 'Javascript', 'SCSS', 'Heroku', 'Gulp'],
+			technologies: ['Javascript', 'Angular', 'Web Audio API', 'Node', 'Tonejs', 'SCSS', 'Heroku', 'Gulp'],
 			date: 'Spring 2015'
 		},
 		{
@@ -39,7 +39,7 @@ export default {
 			url: 'https://resonate.is/',
 			myRole: 'For several months I dedicated spare time working as a volunteer for Reonsate\'s software needs. My work was largely been focused on building out the Audio Player which will be crucial for the success of their crowdfunding campaign. Resonate\'s team is spead across the the globe making communication and management necessary for the success of this product.',
 			// projects: ['Audio Player'],
-			technologies: ['Javascript', 'Gulp', 'Amplitudejs'],
+			technologies: ['Javascript', 'Gulp', 'AWS', 'PHP'],
 			date: 'Summer 2016 - Winter 2016'
 		},
 		{
@@ -72,7 +72,7 @@ export default {
 		{
 			company: '1800Accountant',
 			url: 'https://1800accountant.com',
-			myRole: 'I was the lead in-house developer working with a tech team of two, responsible for building out the online bookkeeping software. With such a small team I was responsible for deisgn and development for not only their customer facing site but also the landing pages and campaigns partered with companies such as Legalzoom and Sam\'s Club. Under the guidance of the CTO, I was also responsible for building integrations with Salesforce.',
+			myRole: 'I was the lead in-house developer working with a tech team of two, responsible for building out the online bookkeeping software. With such a small team I was responsible for design and development for not only their customer facing site but also the landing pages and campaigns partered with companies such as Legalzoom and Sam\'s Club. Under the guidance of the CTO, I was also responsible for building integrations with Salesforce.',
 			technologies: ['PHP', 'Javascript', 'Cake PHP', 'Salesforce', 'MySQL'],
 			date: 'Winter 2013 - Spring 2015'
 		},

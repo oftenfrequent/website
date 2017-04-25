@@ -150,10 +150,21 @@ body {
 		position: relative;
 		border: 3px solid #333;
 
-    img {
-	    width: 500px;
-	    margin-top: -40px;
-	    margin-left: -90px;
+		background: url(https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/17240673_497503820373467_3468441520716811580_o.jpg?oh=0497d5079f45bc63a8f4aea6e6b14bde&oe=5994BD1A);
+    background-size: 500px;
+    background-position-x: -80px;
+    background-position-y: -40px;
+
+    a {
+			height: 300px;
+	    width: 300px;
+	    position:relative;
+	    z-index:2;
+	    display: block;
+
+	    &:hover {
+	    	cursor:pointer;
+	    }
     }
 	}
 }
