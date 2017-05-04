@@ -72,7 +72,7 @@ export default {
 		{
 			company: '1800Accountant',
 			url: 'https://1800accountant.com',
-			myRole: 'I was the lead in-house developer working with a tech team of two, responsible for building out the online bookkeeping software. With such a small team I was responsible for design and development for not only their customer facing site but also the landing pages and campaigns partered with companies such as Legalzoom and Sam\'s Club. Under the guidance of the CTO, I was also responsible for building integrations with Salesforce.',
+			myRole: 'I was the lead in-house developer working with a tech team of two, responsible for building out the online bookkeeping software. With such a small team I was responsible for design and development for not only their customer facing site but also the landing pages and campaigns partnered with companies such as Legalzoom and Sam\'s Club. Under the guidance of the CTO, I was also responsible for building integrations with Salesforce.',
 			technologies: ['PHP', 'Javascript', 'Cake PHP', 'Salesforce', 'MySQL'],
 			date: 'Winter 2013 - Spring 2015'
 		},
