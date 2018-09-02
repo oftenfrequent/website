@@ -29,7 +29,7 @@ export default {
 			url: 'https://github.com/k23Burke/react-component-generator',
 			description: "This project is a small npm module created to assist developers writing React applications. By generating files that adheres to (my) standard of a React components, reducers, and specs, it is meant to get users to stay on the command line. The module itself is very perscriptive in terms of its assumptions about the react environment but does try to enforce best practices.",
 			myRole: 'I am the sole developer on this project. It is in a constant state of improvement - and still trying to stay on the command line more!',
-			technologies: ['Node', 'React'],
+			technologies: ['Node', 'React', 'cli'],
 			date: 'Spring 2016'
 		}
 	],

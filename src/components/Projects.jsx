@@ -1,15 +1,8 @@
 import React from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { connect } from 'react-redux';
-import { fromJS } from 'immutable';
 
 
 export class Projects extends React.Component {
-  constructor(props) {
-    super(props);
-    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
-  }
-
   render() {
     return (
       <div className="section-container projects">

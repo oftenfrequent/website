@@ -1,19 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import PureRenderMixin from 'react-addons-pure-render-mixin'
 import { Link } from 'react-router'
-
 
 import Header from '../components/Header'
 import Bio from '../components/Bio'
 import secrets from '../config/secrets'
 
-export class HomePage extends React.Component {
-  constructor (props) {
-    super(props)
-    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this)
-  }
 
+export class HomePage extends React.Component {
   componentDidMount () {
     document.title = 'Home Page'
   }
