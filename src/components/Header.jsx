@@ -15,14 +15,14 @@ export default class Header extends React.Component {
         <h1>Kyle Burke</h1>
         <hr className='name-divider'/>
         <h5>
-          <span>New York, NY | London, UK</span>
+          <span>{'New York, NY < - > Madrid, SP'}</span>
         </h5>
         <h5>
-          <a href="https://www.linkedin.com/in/kylejayburke" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/oftenfrequent" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <span> | </span>
           <a href="https://github.com/oftenfrequent" target="_blank" rel="noopener noreferrer">Github</a>
-          <span> | </span>
-          <a href="https://soundcloud.com/audios_music" target="_blank" rel="noopener noreferrer">Soundcloud</a>
+          {/* <span> | </span>
+          <a href="https://soundcloud.com/audios_music" target="_blank" rel="noopener noreferrer">Soundcloud</a> */}
         </h5>
         <br/>
       </div>

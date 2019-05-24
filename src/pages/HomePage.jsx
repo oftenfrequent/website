@@ -31,6 +31,7 @@ export class HomePage extends React.Component {
           <div className="center">
             <input ref='pass' onKeyUp={(e) => this.onKeyUp(e)} />
           </div>
+          <p>{"(Password is 'hockey')"}</p>
           {this.props.main.get('allowed')
             ?(<div>
               <br/>
