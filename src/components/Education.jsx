@@ -10,10 +10,14 @@ export class Education extends React.Component {
         <h2>Education</h2>
         {this.props.schools.map( (school,i) =>
           <div key={i} className="section-container">
-            <h3>
-              <a href={school.get('url')} target="_blank">{school.get('name')}</a>
-              <small>{school.get('date')}</small>
-            </h3>
+            <div className="header-flex">
+              <h3>
+                <a href={school.get('url')} target="_blank">{school.get('name')}</a>
+              </h3>
+              <h3>
+                <small>{school.get('date')}</small>
+              </h3>
+            </div>
             <h5>{school.get('location')}</h5>
             <p>{school.get('brief')}</p>
           </div>

@@ -1,7 +1,7 @@
 export default () => {
   return (
     <div className='bio-container'>
-      <p>A multidisciplinary artist and software engineer largely interested in the intersection between sonic experiences and technology. Currently <a href="https://www.coindesk.com/dont-hodl-buidl-blockchain-tech-will-add-value-2018/" target="_blank" rel="noopener noreferrer">buidling</a> the future of the music industry at <a href="https://ujomusic.com/" target="_blank" rel="noopener noreferrer">Ujo Music</a>.</p>
+      <p>A trained software engineer, practiced disc jockey, and free form dabbler of synthesizers.<br/>Interested in the intersection between sonic experiences and technology. Currently in a super-group building a community engagement protocol at <a href="https://mochi.game/" target="_blank" rel="noopener noreferrer">Mochi.game</a>. Interested in joining? <a href="https://mochi.club" target="_blank" rel="noopener noreferrer">Apply for membership here.</a></p>
       <p></p>
     </div>
 

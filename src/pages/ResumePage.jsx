@@ -27,8 +27,8 @@ export class ResumePage extends React.Component {
     return (
       <div>
         <Header/>
-        <Projects projects={this.props.main.get('projects')} />
         <Jobs jobs={this.props.main.get('workExperience')} />
+        <Projects projects={this.props.main.get('projects')} />
         <Education schools={this.props.main.get('education')} />
       </div>
     )

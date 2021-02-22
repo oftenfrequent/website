@@ -9,10 +9,14 @@ export class Projects extends React.Component {
         <h2>Projects</h2>
         {this.props.projects.map( (project,i) =>
           <div key={i} className="section-container">
-            <h3>
-              <a href={project.get('url')} target="_blank">{project.get('name')}</a>
-              <small>{project.get('date')}</small>
-            </h3>
+            <div className="header-flex">
+              <h3>
+                <a href={project.get('url')} target="_blank">{project.get('name')}</a>
+              </h3>
+              <h3>
+                <small>{project.get('date')}</small>
+              </h3>
+            </div>
             <p className='divider-after'>
               {project.get('description')}
               {i == 1

@@ -10,10 +10,14 @@ export class Jobs extends React.Component {
         <h2>Work Experience</h2>
         {this.props.jobs.map( (job, i) =>
           <div key={i} className="section-container">
-            <h3>
-              <a href={job.get('url')} target="_blank">{job.get('company')}</a>
-              <small>{job.get('date')}</small>
-            </h3>
+            <div className="header-flex">
+              <h3>
+                <a href={job.get('url')} target="_blank">{job.get('company')}</a>
+              </h3>
+              <h3>
+                <small>{job.get('date')}</small>
+              </h3>
+            </div>
             <p>{job.get('myRole')}</p>
             <ul>
               {job.get('technologies').map( (tech, i) =>

@@ -35,6 +35,21 @@ export default {
 	],
 	workExperience: [
 		{
+			company: 'Mochi Game / Club',
+			url: 'https://mochi.club/',
+			myRole: 'Co-founder and lead technologist of the Mochi game, club, and lifestyle. Together we are building the future of digital-first communities by creating protocols, designing technology, and sharing experiences with those that inspire us.',
+			technologies: ['React', 'Python', 'Django', 'Ethereum', 'Game Design', 'Heroku', 'Community-building'],
+			date: 'Summer 2019 - Right Now'
+		},
+		{
+			company: 'Ujo Music / ConsenSys',
+			url: 'https://ujomusic.com/',
+			myRole: 'Hired as the lead application engineer while the team was still in single digits, I was successfully able to develop and launch the original decentralized music marketplace. While my work was largely focused on engineering in the first year, my scope grew to business development as I helped the team make strategic product decisions and human resources as I wrote the team handbook and redesigning the hiring protocol while the team scaled to double its size.',
+			// projects: ['Audio Player'],
+			technologies: ['React', 'IPFS', 'Ethereum', 'Web3', 'TDD', 'Nextjs', 'ERC-721s', 'Connext State Channels'],
+			date: 'Summer 2017 - Spring 2020'
+		},
+		{
 			company: 'Resonate',
 			url: 'https://resonate.is/',
 			myRole: 'For several months I dedicated spare time working as a volunteer for Reonsate\'s software needs. My work was largely been focused on building out the Audio Player which will be crucial for the success of their crowdfunding campaign. Resonate\'s team is spead across the the globe making communication and management necessary for the success of this product.',

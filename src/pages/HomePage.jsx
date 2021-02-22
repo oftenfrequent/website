@@ -27,11 +27,11 @@ export class HomePage extends React.Component {
         <Header/>
         <Bio/>
         <div className='resume-access-section'>
-          <h5>To access my resume please enter the password below</h5>
+          <h5>To access my resume please enter the password 'hockey' below</h5>
           <div className="center">
             <input ref='pass' onKeyUp={(e) => this.onKeyUp(e)} />
           </div>
-          <p>{"(Password is 'hockey')"}</p>
+          {/* <p>{"(Password is 'hockey')"}</p> */}
           {this.props.main.get('allowed')
             ?(<div>
               <br/>
