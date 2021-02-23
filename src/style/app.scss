@@ -104,15 +104,13 @@ body {
 			margin-bottom: 50px;
 		}
 
-		&.projects {
-			.divider-after:after {
-		    background: rgba(0, 0, 0, 0.8);
-		    content: '';
-		    display: block;
-		    height: 1px;
-		    margin: 15px auto 5px;
-		    width: 50px;
-			}
+		.divider-after:after {
+			background: rgba(0, 0, 0, 0.8);
+			content: '';
+			display: block;
+			height: 1px;
+			margin: 15px auto 5px;
+			width: 50px;
 		}
 	}
 

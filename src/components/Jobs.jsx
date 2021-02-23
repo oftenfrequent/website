@@ -18,6 +18,9 @@ export class Jobs extends React.Component {
                 <small>{job.get('date')}</small>
               </h3>
             </div>
+            <p className='divider-after'>
+              {job.get('description')}
+            </p>
             <p>{job.get('myRole')}</p>
             <ul>
               {job.get('technologies').map( (tech, i) =>

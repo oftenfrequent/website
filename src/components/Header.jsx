@@ -21,8 +21,8 @@ export default class Header extends React.Component {
           <a href="https://www.linkedin.com/in/oftenfrequent" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <span> | </span>
           <a href="https://github.com/oftenfrequent" target="_blank" rel="noopener noreferrer">Github</a>
-          <span> | </span>
-          <a href="https://gitlab.com/oftenfrequent" target="_blank" rel="noopener noreferrer">Gitlab</a>
+          {/* <span> | </span>
+          <a href="https://gitlab.com/oftenfrequent" target="_blank" rel="noopener noreferrer">Gitlab</a> */}
           {/* <a href="https://soundcloud.com/audios_music" target="_blank" rel="noopener noreferrer">Soundcloud</a> */}
         </h5>
         <br/>
