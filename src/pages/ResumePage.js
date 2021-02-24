@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-import { hashHistory } from 'react-router'
+// import { history } from 'react-router-dom'
 
 import Header from '../components/Header'
 import Projects from '../components/Projects'
@@ -15,9 +15,9 @@ export class ResumePage extends React.Component {
     this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this)
   }
 
-  componentWillMount() {
-    if (!this.props.main.get('allowed')) { hashHistory.push('/') }
-  }
+  // componentWillMount() {
+  //   if (!this.props.main.get('allowed')) { history.push('/') }
+  // }
 
   componentDidMount () {
     document.title = 'Resume Page'

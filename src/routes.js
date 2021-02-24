@@ -1,15 +1,16 @@
 import React from 'react';
-import { Route } from 'react-router';
-import App from './components/App';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import ResumePage from './pages/ResumePage';
+// import ResumePage from './pages/ResumePage';
 
 
 export default function appRoutes() {
   return (
-    <Route component={App}>
-      <Route path="/" component={HomePage}/>
-      <Route path="/resume" component={ResumePage}/>
-    </Route>
+    <Router>
+      <Switch>
+        <Route path="/" component={HomePage}/>
+        {/* <Route path="/resume" component={ResumePage}/> */}
+      </Switch>
+    </Router>
   )
 }

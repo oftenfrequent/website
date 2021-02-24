@@ -3,19 +3,18 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import * as _ from 'lodash'
 import 'babel-polyfill'
-import { applyRouterMiddleware, Router, hashHistory } from 'react-router'
-import useScroll from 'react-router-scroll'
-import initialState from './initialState'
-import configureStore from './configureStore'
-import appRoutes from './routes'
 
-const store = configureStore(initialState)
+import App from './components/App';
+import appRoutes from './routes'
+import AccessContext from './context';
+
+import './style/app.scss'
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router history={hashHistory}>
+  <AccessContext.Provider value={false}>
+    <App>
       {appRoutes()}
-    </Router>
-  </Provider>,
+    </App>
+  </AccessContext.Provider>,
   document.getElementById('app')
 )

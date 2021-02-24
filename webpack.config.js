@@ -14,7 +14,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -30,8 +30,8 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        test: /\.(scss|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
           test: /\.(jpe?g|png|gif|svg)$/i,
@@ -40,25 +40,6 @@ module.exports = {
               loader: 'file-loader',
             },
           ]
-      },
-      // {
-      //   test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      //   loader: "url-loader?limit=10000&minetype=application/font-woff" },
-      // {
-      //   test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      //   loader: "file-loader"
-      // },
-      {
-        test: /\.scss$/,
-        use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
-        ],
-        // loaders: ['style', 'css', 'sass']
       },
     ]
   },
