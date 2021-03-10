@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
@@ -9,16 +9,19 @@ import secrets from '../config/secrets'
 
 
 class HomePage extends React.Component {
-  render() {
-// export const HomePage = () => {
-  // let contextType = ThemeContext;
-    console.log(this.context)
-  // componentDidMount () {
-  //   document.title = 'Home Page'
+  // constructor(props) {
+  //   this.state = {
+  //     allowed: false,
+  //   }
   // }
 
-  // const onKeyUp = e => {
-  //   if (this.refs.pass.value.toLowerCase() === secrets.passcode) {
+  // useEffect(() => {
+  //   document.title = 'Home Page'
+  // })
+
+  // onKeyUp(e) {
+  //   console.log('e.target.value', e.target.value)
+  //   if (e.target.value.toLowerCase() === secrets.passcode) {
   //     this.props.grantAccess();
   //   }
   //   if (e.keyCode === 13 && this.props.main.get('allowed')) {
@@ -26,6 +29,7 @@ class HomePage extends React.Component {
   //   }
   // }
 
+  render() {
     return (
       <div>
         <Header/>
@@ -33,9 +37,9 @@ class HomePage extends React.Component {
         <div className='resume-access-section'>
           <h5>To access my resume please enter the password 'hockey' below</h5>
           <div className="center">
-            {/* <input ref='pass' onKeyUp={(e) => this.onKeyUp(e)} /> */}
+            {/* <input onKeyUp={(e) => onKeyUp(e)} /> */}
           </div>
-          {/* <p>{"(Password is 'hockey')"}</p> */}
+          <p>{"(Password is 'hockey')"}</p>
           {/* {this.props.main.get('allowed')
             ?(<div>
               <br/>
@@ -48,6 +52,7 @@ class HomePage extends React.Component {
     )
   }
 }
+
 HomePage.contextType = AccessContext;
 
 export default HomePage

@@ -11,4 +11,4 @@ app.get('/', function (req, res, next) {
 });
 
 app.listen(port)
-console.log('Listening at http://localhost:',port)
+console.log(`Listening at http://localhost:${port}`)

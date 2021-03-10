@@ -2,19 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
-  //   output: {
-  //     path: __dirname + '/dist',
-  //     publicPath: '/',
-  //     filename: 'bundle.js',
-  //     // filename:      production ? '[name]-[hash].js' : 'bundle.js',
-  //     // chunkFilename: '[name]-[chunkhash].js'
-  //   },
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-  devtool: 'source-map',
+  // devtool: 'source-map',
   module: {
     rules: [
       {
@@ -43,6 +31,19 @@ module.exports = {
       },
     ]
   },
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+  target: 'node',
+  // resolve: {
+  //     fallback: {
+  //         "fs": false,
+  //         "util": require.resolve("util/"),
+  //         "path": require.resolve("path-browserify"),
+  //     },
+  // },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,

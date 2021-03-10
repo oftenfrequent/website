@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import * as _ from 'lodash'
 import 'babel-polyfill'
 
 import App from './components/App';
