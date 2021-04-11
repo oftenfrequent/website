@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 
 export class Education extends React.Component {
@@ -11,14 +10,14 @@ export class Education extends React.Component {
           <div key={i} className="section-container">
             <div className="header-flex">
               <h3>
-                <a href={school.get('url')} target="_blank">{school.get('name')}</a>
+                <a href={school.url} target="_blank">{school.name}</a>
               </h3>
               <h3>
-                <small>{school.get('date')}</small>
+                <small>{school.date}</small>
               </h3>
             </div>
-            <h5>{school.get('location')}</h5>
-            <p>{school.get('brief')}</p>
+            <h5>{school.location}</h5>
+            <p>{school.brief}</p>
           </div>
         )}
       </div>
@@ -27,21 +26,4 @@ export class Education extends React.Component {
 }
 
 
-
-function mapStateToProps(state){
-  return {
-    // prop: state.get(''),
-  }
-}
-
-
-export default connect(
-  mapStateToProps,
-  {
-    //action creators
-  }
-)(Education)
-
-Education.propTypes = {
-    schools: React.PropTypes.object,
-};
+export default Education

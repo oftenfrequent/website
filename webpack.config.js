@@ -36,7 +36,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  target: 'node',
+  // target: 'node',
   // resolve: {
   //     fallback: {
   //         "fs": false,
@@ -45,8 +45,10 @@ module.exports = {
   //     },
   // },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.resolve(__dirname, 'dist'),
     compress: true,
+    hot: true,
     port: 8000,
+    publicPath: 'http://localhost:8080/',
   },
 };

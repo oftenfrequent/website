@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { fromJS } from 'immutable';
 
 
 export class Jobs extends React.Component {
@@ -12,18 +10,18 @@ export class Jobs extends React.Component {
           <div key={i} className="section-container">
             <div className="header-flex">
               <h3>
-                <a href={job.get('url')} target="_blank">{job.get('company')}</a>
+                <a href={job.url} target="_blank">{job.company}</a>
               </h3>
               <h3>
-                <small>{job.get('date')}</small>
+                <small>{job.date}</small>
               </h3>
             </div>
             <p className='divider-after'>
-              {job.get('description')}
+              {job.description}
             </p>
-            <p>{job.get('myRole')}</p>
+            <p>{job.myRole}</p>
             <ul>
-              {job.get('technologies').map( (tech, i) =>
+              {job.technologies.map( (tech, i) =>
                 <li key={i}>{tech}</li>
               )}
             </ul>
@@ -34,22 +32,4 @@ export class Jobs extends React.Component {
   }
 }
 
-
-
-function mapStateToProps(state){
-  return {
-    // prop: state.get(''),
-  }
-}
-
-
-export default connect(
-  mapStateToProps,
-  {
-    //action creators
-  }
-)(Jobs)
-
-Jobs.propTypes = {
-    jobs: React.PropTypes.object,
-};
+export default Jobs

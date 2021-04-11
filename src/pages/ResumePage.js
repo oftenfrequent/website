@@ -1,47 +1,55 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import PureRenderMixin from 'react-addons-pure-render-mixin'
-// import { history } from 'react-router-dom'
 
+import AccessContext from '../context';
 import Header from '../components/Header'
+import Jobs from '../components/Jobs'
 import Projects from '../components/Projects'
 import Education from '../components/Education'
-import Jobs from '../components/Jobs'
 
 
 export class ResumePage extends React.Component {
-  constructor (props) {
-    super(props)
-    this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this)
-  }
-
-  // componentWillMount() {
-  //   if (!this.props.main.get('allowed')) { history.push('/') }
+  static contextType = AccessContext;
+  // constructor(props, context) {
+  //   super(props, context)
+  //   console.log('props', props)
+  //   console.log('context', context)
+  //   console.log('_________context.access__________', !context.access)
+  //   console.log('_________context.access__________', typeof context.access)
+  //   if (!context.acccess) {
+  //     console.log('GO BACK TO ///////////')
+  //     props.history.push('/')
+  //   }
+  //   if (context.access) {
+  //     console.log('GO FUCK YOURSELF BACK TO ///////////')
+  //     props.history.push('/')
+  //   }
   // }
 
-  componentDidMount () {
-    document.title = 'Resume Page'
+  componentDidMount() {
+    console.log('props', this.props)
+    console.log('context', this.context)
+    console.log('_________context.access__________', this.context.access)
+    console.log('_________context.access__________', typeof this.context.access)
+    if (!this.context.acccess) {
+      console.log('GO BACK TO ///////////')
+      this.props.history.push('/')
+    }
+    if (this.context.access) {
+      console.log('GO FUCK YOURSELF BACK TO ///////////')
+      this.props.history.push('/')
+    }
   }
 
   render () {
+    const { workExperience, projects, education } = this.context.content
     return (
       <div>
         <Header/>
-        <Jobs jobs={this.props.main.get('workExperience')} />
-        <Projects projects={this.props.main.get('projects')} />
-        <Education schools={this.props.main.get('education')} />
+        <Projects projects={projects} />
+        <Jobs jobs={workExperience} />
+        <Education schools={education} />
       </div>
     )
   }
 }
-
-function mapStateToProps (state, props) {
-  return {
-    main: state.main
-  }
-};
-
-export default connect(
-  mapStateToProps
-)(ResumePage)
-
+export default ResumePage

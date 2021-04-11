@@ -1,19 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
 import 'babel-polyfill'
 
 import App from './components/App';
-import appRoutes from './routes'
-import AccessContext from './context';
+import Routes from './pages'
+import { AccessProvider } from './context';
 
 import './style/app.scss'
 
 ReactDOM.render(
-  <AccessContext.Provider value={false}>
+  <AccessProvider value={false}>
     <App>
-      {appRoutes()}
+      <Routes/>
     </App>
-  </AccessContext.Provider>,
+  </AccessProvider>,
   document.getElementById('app')
 )

@@ -1,23 +1,22 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 
-export const Projects = () => {
+export const Projects = (props) => {
   return (
     <div className="section-container projects">
       <h2>Projects</h2>
-      {this.props.projects.map( (project,i) =>
+      {props.projects.map( (project,i) =>
         <div key={i} className="section-container">
           <div className="header-flex">
             <h3>
-              <a href={project.get('url')} target="_blank">{project.get('name')}</a>
+              <a href={project.url} target="_blank">{project.name}</a>
             </h3>
             <h3>
-              <small>{project.get('date')}</small>
+              <small>{project.date}</small>
             </h3>
           </div>
           <p className='divider-after'>
-            {project.get('description')}
+            {project.description}
             {i == 1
               ?(<span>
                 {' The project was featured on '}
@@ -27,9 +26,9 @@ export const Projects = () => {
               ): null
             }
           </p>
-          <p>{project.get('myRole')}</p>
+          <p>{project.myRole}</p>
           <ul>
-            {project.get('technologies').map( (tech,i) =>
+            {project.technologies.map( (tech,i) =>
               <li key={i}>{tech}</li>
             )}
           </ul>
@@ -40,23 +39,3 @@ export const Projects = () => {
 }
 
 export default Projects;
-
-
-
-// function mapStateToProps(state){
-//   return {
-//     // prop: state.get(''),
-//   }
-// }
-
-
-// export default connect(
-//   mapStateToProps,
-//   {
-//     //action creators
-//   }
-// )(Projects)
-
-// Projects.propTypes = {
-//     projects: React.PropTypes.object,
-// };
