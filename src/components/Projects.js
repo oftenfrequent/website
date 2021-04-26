@@ -17,14 +17,20 @@ export const Projects = (props) => {
           </div>
           <p className='divider-after'>
             {project.description}
-            {i == 1
-              ?(<span>
+            {!!(project.name == 'Ximer') && (
+              <span>
                 {' The project was featured on '}
                 <a href='https://www.youtube.com/watch?v=pUChD3HGAK4' target='_blank'>Fox 5 News </a>
                 {'and unfortunately is no longer live.'}
-                </span>
-              ): null
-            }
+              </span>
+            )}
+            {!!(project.name == 'Are Yew There Yet?') && (
+              <span>
+                {' The piece was featured the first edition of the '}
+                <a href='https://zine.mochi.club/' target='_blank'>Mochi Zine</a>
+                {' on the topic of [non]spiracy.'}
+              </span>
+            )}
           </p>
           <p>{project.myRole}</p>
           <ul>
