@@ -11,7 +11,6 @@ class HomePage extends React.Component {
   static contextType = AccessContext;
 
   onKeyUp(e) {
-    console.log('e.target.value', e.target.value)
     if (e.target.value.toLowerCase() === secrets.passcode) {
       this.context.grantAccess();
     }
@@ -21,7 +20,6 @@ class HomePage extends React.Component {
   }
 
   render() {
-    console.log('this.context', this.context)
     return (
       <div>
         <Header/>
