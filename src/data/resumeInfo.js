@@ -1,6 +1,14 @@
 export default {
 	projects: [
 		{
+			name: 'Are Yew There Yet?',
+			url: 'http://yew.kylejburke.com/',
+			description: 'A choose your own adventure story following a character who is subsumed into the diaspora of health information on the web. It featues several different endings depending on the path chosen throughout the story.',
+			myRole: 'The piece was design, developed, and written by me with useful edits from friends and colleagues in our club. I have been interested in experimenting with story-tellling in the browser for some time and found this as a great opportunity to do so.',
+			technologies: ['Javascript', 'React', 'Tonejs', 'Styled Components', 'Digital Storytelling'],
+			date: 'Spring 2021'
+		},
+		{
 			name: 'Eurorack Module Synthesizer',
 			url: 'http://eurorack.kylejburke.com',
 			description: 'The Eurorack is a one-of-a-kind module synthesizer built for the web browser. Inspired by its anolog counterparts, the eurorack is unique in its ability to allow users to customize a modular set up and interface with it in an infinite number of ways. Built on top of the Web Audio Framework, Tone.js, the eurorack will soon feature educational walkthroughs providing users with the opportunity to learn hands-on about synthesis and digital sound engineering.',

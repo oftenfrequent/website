@@ -1,0 +1,188 @@
+h1 {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	font-size: 60px;
+	line-height: 70px;
+	text-align: center;
+	letter-spacing: 5px;
+	/* // &:after {
+ //    background: rgba(0, 0, 0, 0.8);
+ //    content: '';
+ //    display: block;
+ //    height: 1px;
+ //    margin: 10px auto 20px;
+ //    width: 150px;
+	// } */
+}
+
+h2 {
+	font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+h3 {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 30px;
+}
+
+h4 {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 25px;
+}
+
+h5 {
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+ul li {
+	list-style: none;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-weight: 800;
+}
+
+p {
+	font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+a:hover, a:visited, a:focus {
+	text-decoration: none;
+}
+
+body {
+	padding: 15px;
+	color: #333;
+	background-color: #F9F9F9;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 15 auto;
+}
+.main-container .header-container {
+  margin-bottom: 20px;
+}
+.main-container .header-container h5 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+}
+.main-container ul {
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-container ul li {
+  margin-right: 20px;
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 100;
+}
+.main-container h3 small {
+  font-weight: 100;
+}
+.main-container .section-container {
+  margin-bottom: 100px;
+}
+.main-container .section-container .section-container {
+  margin-bottom: 50px;
+}
+.main-container .section-container .divider-after:after {
+  background: rgba(0, 0, 0, 0.8);
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 15px auto 5px;
+  width: 50px;
+}
+.main-container .header-flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #333;
+}
+
+.avatar-section {
+  margin-top: 20px;
+}
+.avatar-section hr {
+  top: 250px;
+  z-index: 0;
+  position: relative;
+  border-top: 2px solid #333;
+  border-radius: 5px;
+  width: 90%;
+}
+.avatar-section hr:first-of-type {
+  width: 50%;
+}
+.avatar-section .avatar-container {
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid #333;
+  background: url("../data/often.jpg");
+  background-size: 500px;
+  background-position-x: -80px;
+  background-position-y: -40px;
+}
+.avatar-section .avatar-container a {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+.avatar-section .avatar-container a:hover {
+  cursor: pointer;
+}
+
+.name-divider {
+  border-top: 2px solid #333;
+  width: 150px;
+  margin-top: 0px;
+}
+
+.bio-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resume-access-section {
+  text-align: center;
+  padding: 20px;
+  height: 200px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.center {
+  text-align: center;
+}
+.center input {
+  border: 0px;
+  border-bottom: 2px solid #333;
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
