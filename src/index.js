@@ -6,7 +6,7 @@ import App from './components/App';
 import Routes from './pages'
 import { AccessProvider } from './context';
 
-import './style/app.scss'
+import './style/app.css'
 
 ReactDOM.render(
   <AccessProvider value={false}>
