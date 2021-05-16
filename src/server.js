@@ -1,14 +1,14 @@
-const port = 5000
-const path = require('path')
-const express = require('express')
+const port = 5000;
+const path = require("path");
+const express = require("express");
 
-const app = express()
+const app = express();
 
-app.use(express.static(path.resolve('dist')));
+app.use(express.static(path.resolve("dist")));
 
-app.get('/*', function (req, res, next) {
-  res.sendFile(path.resolve('dist/index.html'));
+app.get("/*", function (req, res, next) {
+  res.sendFile(path.resolve("dist/index.html"));
 });
 
-app.listen(port)
-console.log('Listening at http://localhost:', port)
+app.listen(port);
+console.log(`Listening at http://localhost:${port}`);
