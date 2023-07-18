@@ -15,7 +15,7 @@ const raw = Object.keys(process.env)
 
 module.exports = {
   mode: "development",
-  // devtool: 'source-map',
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -61,10 +61,10 @@ module.exports = {
   //     },
   // },
   devServer: {
-    contentBase: path.resolve(__dirname, "dist"),
+    static: path.resolve(__dirname, "dist"),
     compress: true,
     hot: true,
     port: 8000,
-    publicPath: "http://localhost:8080/",
+    // publicPath: "http://localhost:8080/",
   },
 };
