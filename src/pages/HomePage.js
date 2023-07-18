@@ -28,7 +28,7 @@ class HomePage extends React.Component {
           <div className="center">
             <input onKeyUp={(e) => this.onKeyUp(e)} />
           </div>
-          <p>{`(Password is '${REACT_APP_PASSCODE}')`}</p>
+          {/* <p>{`(Password is '${REACT_APP_PASSCODE}')`}</p> */}
           {this.context.access ? (
             <h5>
               <Link to="/resume">Resume</Link>

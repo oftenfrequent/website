@@ -1,6 +1,14 @@
 export default {
 	projects: [
 		{
+			name: 'Yoga Pose Classification',
+			url: 'https://github.com/oftenfrequent/yoga-pose-classification',
+			description: 'A series of neural networks to explore the classification of yoga poses. The project is built on top of the PyTorch.js framework and uses keypoints to determine the pose of a user. The project is currently in development and will soon feature a web-based interface to allow users to interact with the model.',
+			myRole: 'The project was scoped, designed, and developed by me. I have been interested in exploring the use of machine learning for physical therapy and posture-related applications for some time and found this as a great opportunity to do so.',
+			technologies: ['Python', 'Detectron', 'PyTorch', 'Kaggle', 'OpenCV', 'Numpy'],
+			date: 'Spring 2023'
+		},
+		{
 			name: 'Are Yew There Yet?',
 			url: 'http://yew.kylejburke.com/',
 			description: 'A choose your own adventure story following a character who is subsumed into the diaspora of health information on the web. It featues several different endings depending on the path chosen throughout the story.',
@@ -113,6 +121,13 @@ export default {
 		}
 	],
 	education: [
+		{
+			name: 'Brain Station',
+			url: 'https://brainstation.io/',
+			location: 'Vancover, BC',
+			date: 'Spring 2023',
+			brief: 'An three month intensive bootcamp focusing on the skills required for Data Science and Machine Learning',
+		},
 		{
 			name: 'Fullstack Academy',
 			url: 'http://www.fullstackacademy.com/',
