@@ -129,6 +129,13 @@ export default {
 			brief: 'An three month intensive bootcamp focusing on the skills required for Data Science and Machine Learning',
 		},
 		{
+			name: 'Functional Patterns',
+			url: 'https://functionalpatterns.com/',
+			location: 'Madrid, Spain',
+			date: 'Spring 2022',
+			brief: 'Human Biomechanics Specialist Certification Level 1. A 4 day intensive course focusing on the biomechanics of the human body and how to correct imbalances through movement.',
+		},
+		{
 			name: 'Fullstack Academy',
 			url: 'http://www.fullstackacademy.com/',
 			location: 'New York, NY',

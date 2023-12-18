@@ -130,10 +130,10 @@ body {
   overflow: hidden;
   position: relative;
   border: 3px solid #333;
-  background: url("../data/often.jpg");
-  background-size: 500px;
-  background-position-x: -80px;
-  background-position-y: -40px;
+  background: url("../data/often2.jpg");
+  background-size: 1200px;
+  background-position-x: -400px;
+  background-position-y: -500px;
 }
 .avatar-section .avatar-container a {
   height: 300px;
