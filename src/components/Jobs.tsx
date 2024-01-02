@@ -1,16 +1,19 @@
-import React from 'react';
+import { WorkExperience } from '../data/data/jobData';
 
+type JobProps = {
+  jobs: Array<WorkExperience>
+}
 
-export class Jobs extends React.Component {
-  render() {
+export const Jobs = ({ jobs }: JobProps) =>  {
+
     return (
       <div className="section-container">
         <h2>Work Experience</h2>
-        {this.props.jobs.map( (job, i) =>
+        {jobs.map( (job:WorkExperience, i: number) =>
           <div key={i} className="section-container">
             <div className="header-flex">
               <h3>
-                <a href={job.url} target="_blank">{job.company}</a>
+                <a href={job.url} target="_blank" rel="noreferrer">{job.company}</a>
               </h3>
               <h3>
                 <small>{job.date}</small>
@@ -21,15 +24,14 @@ export class Jobs extends React.Component {
             </p>
             <p>{job.myRole}</p>
             <ul>
-              {job.technologies.map( (tech, i) =>
-                <li key={i}>{tech}</li>
+              {job.technologies.map( (tech: string, j: number) =>
+                <li key={j}>{tech}</li>
               )}
             </ul>
           </div>
         )}
       </div>
     )
-  }
 }
 
 export default Jobs

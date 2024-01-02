@@ -1,16 +1,20 @@
 import React from 'react';
+import { Education } from '../data/data/eduData';
 
+type EduProps = {
+  schools: Education[]
+}
 
-export class Education extends React.Component {
-  render() {
+export const EducationComponent = ({ schools }: EduProps) => {
+  
     return (
       <div className="section-container">
         <h2>Education</h2>
-        {this.props.schools.map( (school,i) =>
+        {schools.map( (school,i) =>
           <div key={i} className="section-container">
             <div className="header-flex">
               <h3>
-                <a href={school.url} target="_blank">{school.name}</a>
+                <a href={school.url} target="_blank" rel="noreferrer">{school.name}</a>
               </h3>
               <h3>
                 <small>{school.date}</small>
@@ -22,8 +26,7 @@ export class Education extends React.Component {
         )}
       </div>
     )
-  }
 }
 
 
-export default Education
+export default EducationComponent

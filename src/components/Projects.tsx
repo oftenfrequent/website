@@ -1,11 +1,14 @@
-import React from 'react';
+import { Project } from '../data/data/projectsData';
 
+type ProjectProps = {
+  projects: Array<Project>
+}
 
-export const Projects = (props) => {
+export const Projects = ({ projects }: ProjectProps) => {
   return (
     <div className="section-container projects">
       <h2>Projects</h2>
-      {props.projects.map( (project,i) =>
+      {projects.map( (project,i) =>
         <div key={i} className="section-container">
           <div className="header-flex">
             <h3>
@@ -17,14 +20,14 @@ export const Projects = (props) => {
           </div>
           <p className='divider-after'>
             {project.description}
-            {!!(project.name == 'Ximer') && (
+            {!!(project.name === 'Ximer') && (
               <span>
                 {' The project was featured on '}
                 <a href='https://www.youtube.com/watch?v=pUChD3HGAK4' target='_blank' rel="noreferrer">Fox 5 News </a>
                 {'and unfortunately is no longer live.'}
               </span>
             )}
-            {!!(project.name == 'Are Yew There Yet?') && (
+            {!!(project.name === 'Are Yew There Yet?') && (
               <span>
                 {' The piece was featured the first edition of the '}
                 <a href='https://zine.mochi.club/' target='_blank' rel="noreferrer">Mochi Zine</a>
@@ -34,8 +37,8 @@ export const Projects = (props) => {
           </p>
           <p>{project.myRole}</p>
           <ul>
-            {project.technologies.map( (tech,i) =>
-              <li key={i}>{tech}</li>
+            {project.technologies.map( (tech,j) =>
+              <li key={j}>{tech}</li>
             )}
           </ul>
         </div>
