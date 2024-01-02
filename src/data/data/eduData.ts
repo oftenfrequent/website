@@ -1,4 +1,4 @@
-interface EducationInterface {
+export type Education = {
 	name: string;
 	url: string;
 	location: string;
@@ -6,16 +6,7 @@ interface EducationInterface {
 	brief: string;
 }
 
-class Education implements EducationInterface {
-	name: string = "";
-	url: string = "";
-	location: string = "";
-	date: string = "";
-	brief: string = "";
-}
-
-
-const brainstation: EducationInterface = 
+const brainstation: Education = 
 {
   name: 'Brain Station',
   url: 'https://brainstation.io/',
@@ -24,7 +15,7 @@ const brainstation: EducationInterface =
   brief: 'An three month intensive bootcamp focusing on the skills required for Data Science and Machine Learning',
 }
 
-const functionalPatterns: EducationInterface =
+const functionalPatterns: Education =
 {
   name: 'Functional Patterns',
   url: 'https://functionalpatterns.com/',
@@ -33,7 +24,7 @@ const functionalPatterns: EducationInterface =
   brief: 'Human Biomechanics Specialist Certification Level 1. A 4 day intensive course focusing on the biomechanics of the human body and how to correct imbalances through movement.',
 }
 
-const fullstackAcademy: EducationInterface =
+const fullstackAcademy: Education =
 {
   name: 'Fullstack Academy',
   url: 'http://www.fullstackacademy.com/',
@@ -42,7 +33,7 @@ const fullstackAcademy: EducationInterface =
   brief: 'An intense and immerseive three month coding bootcamp focusing on javascript and the MEAN stack',
 }
 
-const endicottCollege: EducationInterface =
+const endicottCollege: Education =
 {
   name: 'Endicott College',
   url: 'http://www.endicott.edu/',
@@ -51,7 +42,7 @@ const endicottCollege: EducationInterface =
   brief: 'Business Admin Major: focus in Computer Information Systems | 3.8 GPA | President\'s Scholar | Magna Cum Laude | 4 year starter & 1 year Lacrosse Captain',
 }
 
-const florenceUniversity: EducationInterface =
+const florenceUniversity: Education =
 {
   name: 'Florence University of the Arts',
   url: 'http://fua.it/',

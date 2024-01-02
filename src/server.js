@@ -4,10 +4,10 @@ const express = require("express");
 
 const app = express();
 
-app.use(express.static(path.resolve("dist")));
+app.use(express.static(path.resolve("build")));
 
 app.get("/*", function (req, res, next) {
-  res.sendFile(path.resolve("dist/index.html"));
+  res.sendFile(path.resolve("build/index.html"));
 });
 
 app.listen(port);

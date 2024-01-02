@@ -1,18 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 
-import AccessContext from '../context';
+import { useContext } from "../context";
 import Header from '../components/Header'
 import Bio from '../components/Bio'
 import Jobs from '../components/Jobs'
 import Projects from '../components/Projects'
 import Education from '../components/Education'
 
-export const ResumePage = props => {
-  const context = useContext(AccessContext);
+export const ResumePage = () => {
+  const { access, content } = useContext();
+  const navigate = useNavigate();
 
-  if (!context.access) props.history.push('/')
+  useEffect(() => {
+    if (!access) navigate('/')
+  }, [access, navigate])
 
-  const { workExperience, projects, education } = context.content
+  const { workExperience, projects, education } = content
   return (
     <div>
       <Header/>
