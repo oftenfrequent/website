@@ -1,4 +1,4 @@
-interface WorkExperienceInterface {
+export type WorkExperience = {
 	company: string;
 	url: string;
 	description: string;
@@ -6,19 +6,6 @@ interface WorkExperienceInterface {
 	technologies: string[];
 	date: string;
 }
-
-class WorkExperience implements WorkExperienceInterface {
-  company: string = '';
-  url: string = '';
-  description: string = '';
-  myRole: string = '';
-  technologies: string[] = [];
-  date: string = '';
-}
-
-// class WorkExperience implements workExperienceInterface {
-// 	workExperience: WorkExperienceInterface[];
-// }
 
 const MochiGameClub: WorkExperience =
 {

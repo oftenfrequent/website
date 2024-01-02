@@ -1,19 +1,10 @@
-interface ProjectInterface {
+export type Project = {
 	name: string;
 	url: string;
 	description: string;
 	myRole: string;
 	technologies: string[];
 	date: string;
-}
-
-class Project implements ProjectInterface {
-	name: string = '';
-	url: string = '';
-	description: string = '';
-	myRole: string = '';
-	technologies: string[] = [];
-	date: string = '';
 }
 
 const YogaPoseClassification: Project = {
