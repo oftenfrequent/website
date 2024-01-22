@@ -9,11 +9,3 @@ const resumeInfo = {
 }
 
 export default resumeInfo;
-
-// export default {
-// 	projects: ProjectsData,
-// 	workExperience: jobData,
-// 	education: [
-// 	],
-// 	allowed: false
-// }

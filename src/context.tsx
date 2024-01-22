@@ -1,5 +1,5 @@
 import React, { Dispatch, PropsWithChildren, useReducer } from 'react';
-import content from './data/resumeInfo';
+import content from './data/data/resumeInfo';
 import { createContext } from './config/createContext';
 import { Education } from './data/data/eduData';
 import { Project } from './data/data/projectsData';

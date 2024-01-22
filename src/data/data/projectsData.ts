@@ -10,8 +10,8 @@ export type Project = {
 const YogaPoseClassification: Project = {
 	name: 'Yoga Pose Classification',
 	url: 'https://github.com/oftenfrequent/yoga-pose-classification',
-	description: 'A series of neural networks to explore the classification of yoga poses. The project is built on top of the PyTorch.js framework and uses keypoints to determine the pose of a user. The project is currently in development and will soon feature a web-based interface to allow users to interact with the model.',
-	myRole: 'The project was scoped, designed, and developed by me. I have been interested in exploring the use of machine learning for physical therapy and posture-related applications for some time and found this as a great opportunity to do so.',
+	description: 'A series of neural networks to explore the classification of 82 yoga poses with a 93% success rate. The project is built on top of the PyTorch.js framework and uses body keypoints generated from Detectron2 to determine the pose of a user.',
+	myRole: 'The project was scoped, designed, and developed by me. I am interested in exploring the use of machine learning for physical therapy and posture-related applications for some time and found this as a great opportunity to do so.',
 	technologies: ['Python', 'Detectron', 'PyTorch', 'Kaggle', 'OpenCV', 'Numpy'],
 	date: 'Spring 2023'
 }
