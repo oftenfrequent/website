@@ -6,6 +6,7 @@ import {
 
 import HomePage from './HomePage'
 import ResumePage from './ResumePage'
+import ChatPage from './ChatPage'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/resume",
     element: <ResumePage />
+  },
+  {
+    path: "/chat",
+    element: <ChatPage />
   },
 ]);
 

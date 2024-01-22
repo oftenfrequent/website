@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom'
 const Header = () => (
   <div className="header-container">
     <div className='avatar-section'>
-      <hr/>
-      <hr/>
+      <hr />
+      <hr />
       <div className='avatar-container'>
         <Link to='/' />
       </div>
     </div>
     <h1>Kyle Burke</h1>
-    <hr className='name-divider'/>
+    <hr className='name-divider' />
+    <h5>
+      <Link to="/chat">Ask me something</Link>
+    </h5>
     <h5>
       <span>Madrid, Spain</span>
     </h5>
@@ -23,7 +26,7 @@ const Header = () => (
       <a href="https://gitlab.com/oftenfrequent" target="_blank" rel="noopener noreferrer">Gitlab</a> */}
       {/* <a href="https://soundcloud.com/audios_music" target="_blank" rel="noopener noreferrer">Soundcloud</a> */}
     </h5>
-    <br/>
+    <br />
   </div>
 )
 
